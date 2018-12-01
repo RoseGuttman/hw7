@@ -1,0 +1,22 @@
+<!HTML DOCTYPE>
+<html>
+<head>
+<title>{{page_title}}</title>
+</head>
+<body>
+<!-- Flickr instructions
+Your goal in this assignment is to create a web app that lets you search Flickr and that displays thumbnails from the results. The minimum requirements, if using the Flickr API, are that:
+
+Your app have a webpage that takes a user's input for one or more things for which to search (this could be text, it could be a tag, it could be a location, etc.).
+
+Your app search Flickr based in this user input and display at least five thumbnails.
+
+Note: Pages on App Engine have a maximum execution time. As you experienced in HW6, conducting a search for 500 images, or even calling flickr.photos.getinfo on several photos, can take a long time. We recommend keeping your per_page count low, and, at least at first, using just flickr.photos.search to generate your results.-->
+
+    <form action="flickersearchresponse" method="post">
+       <!-- Here is only a basic form. Please add more HTML codes based on your design. !-->
+       <input type="text" id="search_input" name="search_input"/>
+       <input type="submit" value="Submit" name="gobtn"/> 
+    </form>
+</body>
+</html>

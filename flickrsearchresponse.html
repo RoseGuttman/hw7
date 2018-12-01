@@ -1,0 +1,29 @@
+<!HTML DOCTYPE>
+<html>
+<head>
+<title>{{page_title}}</title>
+</head>
+<body>
+<!-- Write the HTML code to display the search results!-->
+<br>
+
+<div>
+	<h3>Top Five Photos by Views</h3>
+	{% for photo in topfiveviews %}
+	<img src="{{photo.photo_url}}">
+	{% endfor %}
+</div>
+<br>
+
+<div>
+	<h3>Highest Number of Tags</h3>
+	<img src="{{toponetags.photo_url}}">
+</div>
+<br>
+
+<div>
+	<h3>Highest Number of Comments</h3>
+	<img src="{{toponecomments.photo_url}}">
+</div>
+</body>
+</html>
