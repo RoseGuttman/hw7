@@ -31,11 +31,11 @@ def safeGet(url):
     try:
         return urllib2.urlopen(url)
     except urllib2.HTTPError as e:
-        print 'The server couln\'t fulfill the request.'
-        print 'Error code: ', e.code
+        print ('The server couln\'t fulfill the request.')
+        print ('Error code: ', e.code)
     except urllib2.URLError as e:
-        print 'We failed to reach a server'
-        print 'Reason: ', e.reason
+        print ('We failed to reach a server')
+        print ('Reason: ', e.reason)
     return None
 
 def flickrREST(baseurl = 'https://api.flickr.com/services/rest/',
