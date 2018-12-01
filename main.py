@@ -30,10 +30,10 @@ JINJA_ENVIRONMENT = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.di
 def safeGet(url):
     try:
         return urllib2.urlopen(url)
-    except urllib2.HTTPError, e:
+    except urllib2.HTTPError as e:
         print 'The server couln\'t fulfill the request.'
         print 'Error code: ', e.code
-    except urllib2.URLError, e:
+    except urllib2.URLError as e:
         print 'We failed to reach a server'
         print 'Reason: ', e.reason
     return None
